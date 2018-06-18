@@ -59,4 +59,33 @@ const sumArray = (array) => {
 	return arraySum;
 }
 
-console.log(sumArray([1,5,3,2,1,6,0]));
+console.log(sumArray([1,5,3,2,1,0]));
+
+// Prime Numbers
+// Step One
+const checkPrime = (numTwo) => {
+	if(numTwo === 0 || numTwo === 1) {
+		return false;
+	}
+	for(let i = 2; i < numTwo; i++) {
+		if(numTwo % i === 0) {
+			return false;
+		}
+	}
+	return true;
+}
+ 
+for(let i = 0; i <= 10; i++) {
+	console.log(i + " " + checkPrime(i));
+}
+
+// Step Two
+const printPrimes = (numThree) => {
+	for(let i = 0; i <= numThree; i++) {
+		if(checkPrime(i) === true) {
+			console.log(i);
+		}
+	}
+}
+
+printPrimes(100);
