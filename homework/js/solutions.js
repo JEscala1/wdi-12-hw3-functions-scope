@@ -25,8 +25,6 @@ const checkPalindrome = (wordOne) => {
 
 console.log(checkPalindrome("RaDAR"));
 
-console.log(calculateSide(3,4));
-
 // Digit Sum
 const sumDigits = (numOne) => {
 	const numOneSplit = (numOne + "").split("");
@@ -49,3 +47,16 @@ const calculateSide = (sideA, sideB) => {
 
 	return sideC;
 }
+
+console.log(calculateSide(3,4));
+
+// Sum Array
+const sumArray = (array) => {
+	let arraySum = 0;
+	for(let i = 0; i <= array.length-1; i++) {
+		arraySum += array[i];
+	}
+	return arraySum;
+}
+
+console.log(sumArray([1,5,3,2,1,6,0]));
