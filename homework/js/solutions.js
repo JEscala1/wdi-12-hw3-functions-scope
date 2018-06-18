@@ -89,3 +89,18 @@ const printPrimes = (numThree) => {
 }
 
 printPrimes(100);
+
+// Insert Dash
+const insertDash = (numFour) => {
+	const numFourArray = (numFour + "").split("");
+	let numFourDashes = "";
+	for(let i = 0; i <= numFourArray.length-1; i++) {
+		if((i !== 0) && (numFourArray[i] % 2 !== 0) && (numFourArray[i - 1] % 2 !== 0)) {
+			numFourDashes += "-";
+		}
+		numFourDashes += numFourArray[i];
+	}
+	return numFourDashes;
+}
+
+console.log(insertDash(133413650));
