@@ -25,17 +25,6 @@ const checkPalindrome = (wordOne) => {
 
 console.log(checkPalindrome("RaDAR"));
 
-// Pythagoras
-const calculateSide = (sideA, sideB) => {
-	// (a^2)+(b^2)=(c^2)
-	const aSquared = sideA * sideA;
-	const bSquared = sideB * sideB;
-
-	const sideC = Math.sqrt(aSquared + bSquared);
-
-	return sideC;
-}
-
 console.log(calculateSide(3,4));
 
 // Digit Sum
@@ -49,3 +38,14 @@ const sumDigits = (numOne) => {
 }
 
 console.log(sumDigits(13524));
+
+// Pythagoras
+const calculateSide = (sideA, sideB) => {
+	// (a^2)+(b^2)=(c^2)
+	const aSquared = sideA * sideA;
+	const bSquared = sideB * sideB;
+
+	const sideC = Math.sqrt(aSquared + bSquared);
+
+	return sideC;
+}
