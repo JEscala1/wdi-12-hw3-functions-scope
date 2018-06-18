@@ -37,3 +37,15 @@ const calculateSide = (sideA, sideB) => {
 }
 
 console.log(calculateSide(3,4));
+
+// Digit Sum
+const sumDigits = (numOne) => {
+	const numOneSplit = (numOne + "").split("");
+	let numOneSum = 0;
+	for(let i = 0; i <= numOneSplit.length-1; i++) {
+		numOneSum += parseInt(numOneSplit[i]);
+	}
+	return numOneSum;
+}
+
+console.log(sumDigits(13524));
