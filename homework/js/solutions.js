@@ -11,6 +11,20 @@ console.log("The javascript is loaded.");
 // console.log - prints requested information into the console.
 // It will not stop a function.
 
+// Palindrome
+const checkPalindrome = (wordOne) => {
+	const wordOneUpperCase = wordOne.toUpperCase();
+	const wordOneSplit = wordOneUpperCase.split("");
+	for(let i = 0; i <= wordOneSplit.length-1; i++){
+		if(wordOneSplit[i] != wordOneSplit[wordOneSplit.length-1-i]) {
+			return false;
+		}
+	}
+	return true;
+}
+
+console.log(checkPalindrome("RaDAR"));
+
 // Pythagoras
 const calculateSide = (sideA, sideB) => {
 	// (a^2)+(b^2)=(c^2)
